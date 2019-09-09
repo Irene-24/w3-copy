@@ -1,6 +1,5 @@
 @media screen and (min-width:426px)
-{
-        
+{        
     /* HEADER STYLES */
 
     /* logo */
@@ -22,6 +21,11 @@
     #http
     {
         width:80px;
+    }
+
+    i.toggle-side
+    {
+        display: none;
     }
 
     /* logo end */
@@ -48,6 +52,11 @@
 
     /* MAIN STYLES */
 
+    main
+    {
+        padding-top:25vh;
+    }
+
     main > div
     {
         padding: 40px 60px;
@@ -62,6 +71,50 @@
 
 }
 
+@media screen and (max-width:425px)
+{
+    header
+    {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+    }
+
+    nav
+    {
+        margin-top: 0;
+    }
+
+    .ext-links
+    {
+        position: fixed;
+        top:0%;
+        left:0;
+        min-width: 220px;
+        width:80vw;
+        padding-top:4vh;
+        max-width: 280px;
+        background: #fff;
+        height:100vh;
+        margin-left: -100%;
+        transition: margin-left 0.5s ease;
+    }
+
+    .ext-links.open
+    {
+        margin-left: 0%;
+    }
+
+    .ext-links > li
+    {       
+        display: block
+    }
+
+    .ext-links > li a,.ext-links > li span
+    {
+        padding-left: 30px;
+        display: block;
+        margin-top: 2vh;
+    }
+}
 
 @media screen and (min-width:1024px)
 { 

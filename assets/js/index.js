@@ -1,11 +1,14 @@
 const readMoreBtns = document.querySelectorAll('.read-more');
 const menu = document.querySelector('.dropDwn span');
 const toggleGrid = document.querySelector('.toggleGrid');
+const toggleSideBarBtn = document.querySelector('.toggle-side');
+const sideBar =  document.querySelector('.ext-links');
 let gridCollapsed = true;
 
 readMoreBtns.forEach( btn => btn.addEventListener('click',showMore) );
 menu.addEventListener('click',showMore);
 toggleGrid.addEventListener('click',showGrid);
+toggleSideBarBtn.addEventListener('click',toggleSideBar);
 
 function showMore(e)
 {
@@ -59,9 +62,82 @@ function showGrid(e)
     {
         target.innerHTML = "View all";
         gridCollapsed = true;
+    }     
+}
+
+let targetPos = 0;
+let currentPosition = 0;
+let links = document.querySelectorAll('.smooth-scroll');
+let main = document.querySelector('main');
+const animateTime = 900;
+
+links.forEach(btn => btn.addEventListener("click", Scroller));
+
+function Scroller(e) 
+{
+   
+    targetPos = document.getElementById(e.target.hash.substr(1)).offsetTop;
+    currentPosition = getYdistance();
+    let diff = currentPosition - targetPos;
+
+    main.classList.add('scrolling');   
+
+    if (diff != 0) 
+    {
+        main.style.transform = "translate(0, " + diff + "px)";      
+
     }
 
-    
+    window.setTimeout(function () 
+    {
+        main.classList.remove('scrolling');
+        main.style.cssText = null;      
+        window.scrollTo(0, targetPos); //to actually scroll
 
+    }, animateTime);
+	 
+    e.preventDefault();
+
+}
+
+function getYdistance() 
+{
+    let yScroll = 0;
+
+    if (window.pageYOffset) 
+    {
+        yScroll = window.pageYOffset;
+    }
+
+    else if (document.documentElement && document.documentElement.scrollTop) 
+    {
+        yScroll = document.documentElement.scrollTop;        
+    }
+    
+    else if (document.body) 
+    {
+        yScroll = document.body.scrollTop;    
+    }
+    return yScroll;
+
+}
+
+function toggleSideBar(e)
+{
+    e.preventDefault();
+    const target = e.target;
+    
+    if( [...sideBar.classList].indexOf('open') > -1 )
+    {
+         sideBar.classList.remove('open');
+         target.innerHTML = "&#xe01f;"
+         target.classList.remove('slide')
+    }
+    else
+    {
+        sideBar.classList.add('open');
+        target.innerHTML = "&#xe020;"
+        target.classList.add('slide')
+    }
     
 }

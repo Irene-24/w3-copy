@@ -31,6 +31,8 @@
         </div>
 
         <nav>
+            <i class="material-icons toggle-side"> &#xe01f;
+            </i>
             <ul class="ext-links">
                 <li><a href="https://www.w3.org/Protocols/Activity.html">HTTP Activity</a></li>
                 <li><a href="https://www.w3.org/Protocols/HTTP/ietf-http-ext/">HTTP Extensions</a></li>
@@ -46,7 +48,7 @@
                         <li><a class="smooth-scroll" href="#talks">Talks</a></li>
                         <li><a class="smooth-scroll" href="#mailing">Mailing lists</a></li>
                         <li><a class="smooth-scroll" href="#ietf">IETF</a></li>
-                        <li><a class="smooth-scroll" href="#background">Background</a></li>
+                        <li><a class="smooth-scroll" href="#other">Background</a></li>
                     </ul>
                 </li>
 
@@ -84,18 +86,17 @@
                             <li><a href="http://tools.ietf.org/html/rfc7235">RFC7235: HTTP/1.1, part 7:
                                     Authentication</a></li>
                         </ul>
+                        <p> Along with</p>
                         <ul>
-                            <p> Along with</p>
                             <li><a href="http://tools.ietf.org/html/rfc7236">RFC7236: Initial HTTP Authentication Scheme
                                     Registrations</a></li>
                             <li><a href="http://tools.ietf.org/html/rfc7237">RFC7237: Initial HTTP Method
                                     Registrations</a></li>
                         </ul>
+                        <p> And related specifications:</p>
                         <ul>
-                            <p> And related specifications:</p>
-                            <li><a href="RFC7238: The HTTP Status Code 308 (Permanent Redirect)">RFC7236: Initial HTTP
-                                    Authentication Scheme
-                                    Registrations</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc7236">
+                                    RFC7238: The HTTP Status Code 308 (Permanent Redirect)</a></li>
                             <li><a href="http://tools.ietf.org/html/rfc7239">RFC7239: Forwarded HTTP Extension</a></li>
                             <li><a href="http://tools.ietf.org/html/rfc7240">RFC7240: Prefer Header for HTTP</a></li>
                         </ul>
@@ -443,6 +444,7 @@
 
         </div>
 
+        <div id="target"></div>
         <div id="news">
             <h1 class="div-title">News,Updates, and Events</h1>
 
@@ -519,20 +521,306 @@
 
             <p> <strong>Background</strong></p>
             <br>
-            <li><a href="https://www.w3.org/Protocols/Time/">Overview of Time</a>- What is the state of time on the
-                Internet?</li>
-            <li><a href="https://www.w3.org/Protocols/Papers.html"> Interesting Papers and <strong> MUST
-                    </strong>reads</a> ! A collection of papers from work shops, conferences etc.</li>
-            <li><a href="https://www.w3.org/Protocols/HTTP/Performance/Overview.html#Compression">Compression and
-                    HTTP</a> - also check out the <a href="http://en.wikipedia.org/wiki/Data_compression">comprehensive
-                    compression overview</a> </li>
-            <li> <a href="https://www.w3.org/Protocols/Classic.html">Classic HTTP Documents </a> - read how it all
-                started </li>
+            <ul>
+                <li><a href="https://www.w3.org/Protocols/Time/">Overview of Time</a>- What is the state of time on the
+                    Internet?</li>
+                <li><a href="https://www.w3.org/Protocols/Papers.html"> Interesting Papers and <strong> MUST
+                        </strong>reads</a> ! A collection of papers from work shops, conferences etc.</li>
+                <li><a href="https://www.w3.org/Protocols/HTTP/Performance/Overview.html#Compression">Compression and
+                        HTTP</a> - also check out the <a
+                        href="http://en.wikipedia.org/wiki/Data_compression">comprehensive
+                        compression overview</a> </li>
+                <li> <a href="https://www.w3.org/Protocols/Classic.html">Classic HTTP Documents </a> - read how it all
+                    started </li>
+
+            </ul>
+        </div>
+
+        <div id="software">
+            <h1 class="div-title">HTTP Sample Software</h1>
+
+            <p>
+
+            </p> W3C offers the <a href="https://www.w3.org/Jigsaw/"> Jigsaw</a> server written in Java and the <a
+                href="https://www.w3.org/Library/">libwww </a> client API - both released with a full set of HTTP/1.1
+            functionality including caching and persistent connections. Please see the
+            <a href="https://www.w3.org/Status.html">W3C open source contributions </a> for more details.
+        </div>
+
+        <div id="talks" class="grey">
+            <h1 class="div-title">
+                Talks and Presentations
+            </h1>
+
+            <br>
+
+            <a href="https://www.w3.org/Talks/970210HTTP/all.htm">Preliminary HTTP/1.1 Performance Evaluation</a>
+            by Jim Gettys
+            <p class="indented">
+                The <a href="https://www.w3.org/Protocols/HTTP/Performance/Pipeline.html">HTTP/1.1 performance paper</a>
+                explains the experiments in detail, and was recently submitted for publication. This work shows how you
+                can gain as much as a factor of 10 in number of packets and 2 in times of speed by using HTTP/1.1
+                pipelining. Earliest results were presented at the
+                <a href="https://www.w3.org/Protocols/IETF/9612-SanJose/Notes-day1.html"> IETF meeting in San Jose</a>,
+                December 1996, and more complete results at the
+                <a href="https://www.w3.org/Talks/970115HTTP/all.htm">W3C Advisory Committee Meeting </a> in England in
+                January.
+            </p>
+            <br>
+            <a href="https://www.w3.org/Talks/9608HTTP/"> Overview of new HTTP/1.1 functionality and changes from
+                HTTP/1.0 </a>
+            by Jim Gettys
+            <p class="indented">
+                This presentation gives a good overview of new features. It will be updated occasionally as it is
+                presented. The presentation is also available for
+                <a href="https://www.w3.org/Talks/9608HTTP/http_1_1.ppt"> Microsoft PowerPoint</a>
+            </p>
+            <br>
+            <a href="https://www.w3.org/Talks/9606IETF/"> PEP - An Extension Mechanism for HTTP</a>
+            by Henrik Frystyk Nielsen and Rohit Khare
+            <p class="indented"> This presentation was given at the <a
+                    href="https://www.w3.org/Protocols/IETF/9606-Montreal/http-wg-minutes.txt">IETF meeting in
+                    Montreal</a>, June 1996.</p>
+        </div>
+
+        <div id="mailing">
+            <h1 class="div-title">
+                HTTP Mailing lists
+            </h1>
+
+            <p>
+                There are several mailing lists that you are welcome to use. As several of them are very high volume
+                then please check out the archives first to see if the topic that you want to bring up in fact already
+                has been discussed. As we try to make as much progress on HTTP as possible it is very important that we
+                can stay focused - even on open mailing lists!
+            </p>
+
+            <p>ietf-http-wg@w3.org (Archived at <a href="http://lists.w3.org/Archives/Public/ietf-http-wg/">W3C </a>
+                (see also the <a href="http://lists.w3.org/Archives/Public/ietf-http-wg-old/">1994 to 2002 archives</a>
+                ).</p>
+            <p class="indented">
+                The official mailing list of the IETF HTTP working group.
+            </p>
+
+            <br>
+            <a href="https://www.w3.org/Mail/Request.html">
+                w3c-http@w3.org</a> ( <a href="http://lists.w3.org/Archives/Member/w3c-http/">Archive</a> )
+            <p class="indented">This is a W3C mailing list dedicated to promote HTTP/1.1 implementation, to gain
+                sufficient experience among W3C Members to support the specification, and ease
+                development of HTTP/1.1 software and applications. The list is only accessible to W3C members.</p>
+
+            <br>
+            <a href="https://www.w3.org/Mail/Request.html">
+                www-talk@w3.org</a> ( <a href="http://lists.w3.org/Archives/Public/www-talk/">Archive</a> )
+            <p class="indented">This is the primary public mailing list for technical discussion among those developing
+                World Wide Web software. It is explicitly intended for the collaborative design of new systems,
+                software, protocols, and documentation which may be useful to the WWW developer community. General
+                questions from non-developers should go one of the many <a href="news:comp.infosystems">newsgroups</a> .
+            </p>
+
+            <p>
+                www-speed@tipper.oit.unc.edu ( <a href="http://www.ibiblio.org/mdma-release/">Information</a> )
+
+            </p>
+
+            <p class="indented"> This list is no longer maintained and is not active anymore. <strong> Do not post any
+                    mails to this address!</strong></p>
+
+            <p>See also the <a href="https://www.w3.org/Protocols/HTTP-NG/">information on HTTP-NG</a> </p>
+
+        </div>
+
+        <div id="ietf" class="grey">
+            <h1 class="div-title">
+                IETF Related Information
+            </h1>
+
+            <p>
+                The <a href="http://www.ietf.org/"> Internet Engineering Task Force </a>(IETF) is the protocol
+                engineering and development arm of the Internet. The IETF is a large open international community of
+                network designers, operators, vendors, and researchers concerned with the evolution of the Internet
+                architecture and the smooth operation of the Internet. It is open to any interested individual.
+            </p>
+
+            <br>
+
+            <ul>
+                <li> Current <a href="http://www.ietf.org/internet-drafts/"> Internet Drafts </a>(IDs) </li>
+                <li> <a href="http://www.rfc-editor.org/rfc-index.html"> Request for Comments </a> (RFCs) and another <a
+                        href="http://www.garlic.com/~lynn/rfcietff.htm"> very nice interface to RFCs </a></li>
+                <li> Information on <a href="http://www.ietf.org/rfc/rfc2000.txt"> Internet Official Protocol
+                        Standards</a> and </li>
+                <li> <a href="http://www.ietf.org/rfc/rfc2026.txt"> Internet Standards Process </a> about the IETF
+                    standards process. </li>
+            </ul>
+
+            <br>
+
+            <h3 class="div-title">Working Groups Related to HTTP</h3>
+
+            <p>
+                These are the <a href="http://www.ietf.org/"> IETF </a>working groups working on HTTP directly related
+                issues:
+            </p>
+
+            <ul>
+                <li> <a href="http://www.imc.org/ietf-medfree">Content Negotiation </a> (conneg) IETF Working Group with
+                    <a href="ietf-medfree@imc.org"> mailing list</a> and <a
+                        href="http://www.imc.org/ietf-medfree/entire-arch.txt"> archives </a> </li>
+                <li> <a href="http://ftp.ics.uci.edu/pub/ietf/http/"> HTTP wg</a> (http) with <a
+                        href="http-wg@cuckoo.hpl.hp.com"> mailing list </a>and <a
+                        href="http://lists.w3.org/Archives/Public/ietf-http-wg-old/"> archives</a></li>
+
+                <li> <a href="http://www.ics.uci.edu/~ejw/authoring/"> WWW Distributed Authoring and Versioning
+                    </a>(webdav) with <a href="w3c-dist-auth@w3.org"> mailing list </a> and <a
+                        href="http://lists.w3.org/Archives/Public/w3c-dist-auth/">archives</a> </li>
+
+
+                <li>
+                    <a href="http://datatracker.ietf.org/wg/wts/charter/"> Web Transaction Security wg</a> (wts)</li>
+            </ul>
+
+            <p>Paul Hoffman at the <a href="http://www.imc.org/"> Internet Mail Consortium </a>maintains an excellent
+                list of <a href="http://www.imc.org/ietfwgs.html">IETF working groups directly related to Internet
+                    Mail</a> . The following list are working groups of more distant nature relative to HTTP.</p>
+
+            <br>
+
+            <ul>
+                <li> <a href="http://en.wikipedia.org/wiki/Application_Configuration_Access_Protocol"> Application
+                        Configuration Access Protocol wg </a> (acap) </li>
+                <li> <a href="http://www.pwg.org/ipp/"> Internet Printing Protocol </a> (ipp) </li>
+                <li> <a href="http://www.ietf.org/html.charters/mmusic-charter.html"> Multiparty Multimedia Session
+                        Control </a> (mmusic) </li>
+                <li> <a href="http://www.ietf.org/html.charters/OLD/tcpimpl-charter.html"> TCP Implementation </a>
+                    (tcpimpl) </li>
+            </ul>
+
+            <p>You can also check the full list of <a href="http://www.ietf.org/html.charters/wg-dir.html"> IETF working
+                    groups</a>.</p>
+
+            <h3 class="div-title">IETF Meetings</h3>
+
+            <p>Also check out the <a href="http://www.ietf.org/meetings/meetings.html"> IETF meeting page</a> for the
+                latest information. We keep a small list of notes from previous HTTP wg meetings at various IETF
+                meetings:</p>
+
+            <p><i>Los Angeles, CA, USA, March-April 1998</i> </p>
+            <p class="indented"> <a href="http://www.ietf.org/proceedings/98mar/index.html"> Where, how-to, agenda
+                    etc.</a></p>
+
+            <p><i>Washington, DC, USA, December 1997</i> </p>
+            <p class="indented"> <a href="http://lists.w3.org/Archives/Public/ietf-http-wg/1997OctDec/0011.html">HTTP-WG
+                    notes from the meeting </a> and the <a href="http://www.ietf.org/proceedings/97dec/toc.htm">complete
+                    on-line Procedings</a> </p>
+
+            <p><i>Munich, Germany, 11-15 August 1997</i> </p>
+            <p class="indented"> <a href="ftp://ftp.ietf.org/ietf/http/http-minutes-97aug.txt">HTTP-WG
+                    notes from the meeting </a> and the <a
+                    href="http://www.ietf.org/proceedings/97aug/toc-97aug.html">complete
+                    on-line Procedings</a> </p>
+
+            <p><i>Memphis, TN, 7-11 April 1997</i> </p>
+            <p class="indented"><a href="ftp://ftp.ietf.org/ietf/http/http-minutes-97apr.txt">HTTP-WG
+                    notes from the meeting </a> and the <a
+                    href="http://www.ietf.org/proceedings/97apr/toc-97apr.html">complete
+                    on-line Procedings</a> </p>
+
+            <p><i>San Jose, CA, 9-13 December 1996</i> </p>
+            <p class="indented"><a href="ftp://ftp.ietf.org/ietf/http/http-minutes-96dec.txt">HTTP-WG
+                    notes from the meeting </a> and the <a
+                    href="http://www.ietf.org/proceedings/96dec/toc-96dec.html">complete
+                    on-line Procedings</a> </p>
+
+
+            <p><i>Montreal, Quebec CANADA, 24-28 June 1996</i> </p>
+            <p class="indented"><a href="https://www.w3.org/Protocols/IETF/9606-Montreal/http-wg-minutes.txt">HTTP-WG
+                    notes from the meeting </a> </p>
+
+
+
+            <h3 class="div-title">Other Organizations Related to IETF</h3>
+
+            <br>
+
+            <ul>
+                <li> The <a href="http://www.ietf.org/iesg.html">Internet Engineering Steering Group </a> (IESG) which
+                    consists of the IETF Area directors together with the Chair of the IETF.</li>
+                <li> The <a href="http://www.isi.edu/irtf/">
+                        Internet Research Task Force (IRTF) </a> is a composed of a number of focused, long-term, small
+                    Research Groups. These groups work on topics related to Internet protocols, applications,
+                    architecture and technology.</li>
+                <li> The <a href="http://www.iab.org/"> Internet Architecture Board </a> (IAB) is a body of the Internet
+                    Society responsible for overall architectural considerations in the Internet.</li>
+                <li> <a href="http://www.isoc.org/"> The Internet Society </a> (ISOC) is a non-governmental
+                    International organization for global cooperation and coordination for the Internet and its
+                    internetworking technologies and applications.</li>
+                <li> <a href="http://www.iana.org/">The Internet Assigned Numbers Authority </a> (IANA) is the central
+                    coordinator for the assignment of unique parameter values for Internet protocols</li>
+            </ul>
+
+        </div>
+
+        <div id="other">
+            <h1 class="div-title">Other Areas and Protocols</h1>
+
+            <br>
+
+            <ul>
+                <li> The HTTP-NG activity has information about Â the former W3C <a
+                        href="https://www.w3.org/Protocols/HTTP-NG/"> HTTP-NG Activity </a> </li>
+                <li> The <a href="https://www.w3.org/Propagation/"> Propagation, Caching and Replication </a>area has a
+                    lot
+                    of information about caching schemes and scalability </li>
+                <li> <a href="http://www.imap.org/">Internet Message Access Protocol (IMAP) </a> is a method of
+                    accessing
+                    electronic mail or bulletin board messages that are kept on a (possibly shared) mail server </li>
+                <li> <a href="http://en.wikipedia.org/wiki/Next_Generation_Internet_Program"> Next Generation Internet
+                        (NGI)
+                        Initiative </a>. On October 10, 1996, President Clinton and Vice President Gore announced their
+                    commitment to the Next Generation Internet (NGI) Initiative, based upon strong research and
+                    development
+                    programs across Federal agencies. </li>
+                <li> <a href="http://www.robotstxt.org/"> The Web Robots Pages</a> - information about Web robots and
+                    how to
+                    manage them </li>
+                <li> <a href="http://www.noc.ucla.edu/weather.html">What's the Internet weather like?</a> A really
+                    useful
+                    service from UCLA </li>
+                <li> A few <a href="https://www.w3.org/Protocols/RelevantProtocols.html"> other Internet protocols </a>
+                    relevant to HTTP </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="grey">
+        <p> <i> <a href="https://www.w3.org/People/Lafon/">Yves Lafon</a> </i>
+            <br>
+            <i>, @(#) $Id: Overview.html,v 1.244 2014-06-11 14:21:46 ylafon Exp $</i>
+        </p>
+
+        <div class="footer-main">
+            <p> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 1996 - 2003
+
+                <a href="">W3C</a> <sup>&reg;</sup> ( <a href="http://www.lcs.mit.edu/">MIT</a>, <a
+                    href="http://www.ercim.org/">ECRIM</a>, <a href="http://www.keio.ac.jp/">Keio</a> )
+            </p>
+
+            <p>All Rights Reserved. W3C <a
+                    href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>
+                , <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"> trademark</a>, <a
+                    href="https://www.w3.org/Consortium/Legal/copyright-documents"> document use</a> and
+                <a href="https://www.w3.org/Consortium/Legal/copyright-software">software licensing</a> rules apply.</p>
+            <p>Your interactions with this site are in accordance with our <a
+                    href="https://www.w3.org/Consortium/Legal/privacy-statement#Public">Public and</a> <a
+                    href="https://www.w3.org/Consortium/Legal/privacy-statement#Members"> Member</a> privacy statements.
+            </p>
 
 
         </div>
-    </main>
-    <footer></footer>
+
+
+    </footer>
 
 
     <script src="/assets/js/index.js"></script>
