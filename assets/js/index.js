@@ -20,7 +20,6 @@ function showMore(e)
         target = target.parentElement;
     }
     const hidden = target.nextElementSibling;
-    console.log(hidden);
     
     const classList = [...hidden.classList];
 
@@ -83,16 +82,32 @@ function Scroller(e)
     main.classList.add('scrolling');   
 
     if (diff != 0) 
-    {
-        main.style.transform = "translate(0, " + diff + "px)";      
+    {   
+        if(window.innerWidth < 426)
+        {
+            main.style.transform = "translate(0, " + (diff + 100) + "px)";  
 
+        }   
+        else
+        {
+            main.style.transform = "translate(0, " + (diff + 180)  + "px)";  
+        }   
+       
     }
 
     window.setTimeout(function () 
     {
         main.classList.remove('scrolling');
-        main.style.cssText = null;      
-        window.scrollTo(0, targetPos); //to actually scroll
+        main.style.cssText = null; 
+        if(window.innerWidth < 426)
+        {
+            window.scrollTo(0, (targetPos - 100)); //to actually scroll
+        }   
+        else
+        {
+            window.scrollTo(0, (targetPos - 180)); //to actually scroll
+        }
+       
 
     }, animateTime);
 	 

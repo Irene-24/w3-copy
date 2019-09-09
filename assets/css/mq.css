@@ -116,6 +116,15 @@
     }
 }
 
+@media screen and (max-width:1200px)
+{
+    .dropDwn .menu
+    {
+        right: 5%;
+        left:unset;
+    }
+}
+
 @media screen and (min-width:1024px)
 { 
     /* nav start */  
