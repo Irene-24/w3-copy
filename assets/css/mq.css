@@ -1,0 +1,88 @@
+@media screen and (min-width:426px)
+{
+        
+    /* HEADER STYLES */
+
+    /* logo */
+    .logos
+    {
+        margin-top: 2vh;
+    }
+
+    #w3c
+    {
+        width:80px;
+    }
+
+    #arch
+    {
+        width:240px;     
+    }
+
+    #http
+    {
+        width:80px;
+    }
+
+    /* logo end */
+
+    /* nav */
+
+    nav
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ext-links >  li
+    {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+
+    /* nav end */
+
+    /* MAIN STYLES */
+
+    main > div
+    {
+        padding: 40px 60px;
+        font-size:18px;
+        font-weight: normal;
+    }
+
+
+    /* MAIN STYLES END*/
+
+    /* HEADER STYLES END*/
+
+}
+
+
+@media screen and (min-width:1024px)
+{ 
+    /* nav start */  
+    .ext-links > li
+    {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+
+    /* nav end */
+}
+
+@media screen and (min-width:1440px)
+{ 
+    /* nav start */  
+    .ext-links li
+    {
+        padding-left: 50px;
+        padding-right: 50px
+    }
+
+    /* nav end */
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTTP - Hypertext Transfer Protocol</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/mq.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logos">
+            <span id="w3c"> <img src="./assets/img/w3c_home_nb-v.svg" alt="logo of w3c"> </span>
+            <span id="arch"> <img src="./assets/img/arch.svg" alt="logo of architecture domain"> </span>
+            <span id="http"> <img src="./assets/img/HTTP48x.svg" alt="logo of http48x"> </span>
+        </div>
+
+        <nav>
+            <ul class="ext-links">
+                <li><a href="https://www.w3.org/Protocols/Activity.html">HTTP Activity</a></li>
+                <li><a href="https://www.w3.org/Protocols/HTTP/ietf-http-ext/">HTTP Extensions</a></li>
+                <li><a href="https://www.w3.org/Protocols/MUX/">WebMux</a></li>
+                <li><a href="https://www.w3.org/Protocols/HTTP-NG/">HTTP-NG</a></li>
+                <li><a href="https://www.w3.org/WCA">Web Characterization</a></li>
+                <li class="dropDwn">
+                    <span>Jump to <i class="material-icons"> &#xe5c5; </i></span>
+                    <ul class="menu">
+                        <li><a class="smooth-scroll" href="#news">News</a></li>
+                        <li><a class="smooth-scroll" href="#specs">Specs</a></li>
+                        <li><a class="smooth-scroll" href="#software">Software</a></li>
+                        <li><a class="smooth-scroll" href="#talks">Talks</a></li>
+                        <li><a class="smooth-scroll" href="#mailing">Mailing lists</a></li>
+                        <li><a class="smooth-scroll" href="#ietf">IETF</a></li>
+                        <li><a class="smooth-scroll" href="#background">Background</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="grey">
+            <p>Now that both HTTP extensions and HTTP/1.1 are stable specifications ( <a
+                    href="https://tools.ietf.org/html/rfc2616">RFC2616</a> at that time), W3C has closed the HTTP
+                Activity.</p>
+
+            <br>
+
+            <p>An effort to revise HTTP/1.1 started in 2006, which led to the creation of the <a
+                    href="http://www.ietf.org/html.charters/httpbis-charter.html"></a>IETF httpbis Working Group. Work
+                completed with the publication of RFC 723X (See <a class="smooth-scroll" href="#rfc723x">below</a>)</p>
+
+            <div class="grid">
+                <div class="card-timeline">
+                    <p id="rfc723x" class="date">2014-06</p>
+                    <p class="desc">RFC 723X published</p>
+                    <p class="read-more"> Read more <i class="material-icons"> &#xe5c5; </i></p>
+                    <div class="hidden-more">
+                        <ul>
+                            <li><a href="http://tools.ietf.org/html/rfc7230">RFC7230: HTTP/1.1, part 1: Message Syntax
+                                    and Routing</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc7231">RFC7231: HTTP/1.1, part 2: Semantics and
+                                    Content</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc7232">RFC7232: HTTP/1.1, part 4: Conditional
+                                    Requests</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc7233">RFC7233: HTTP/1.1, part 5: Range
+                                    Requests</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc7234">RFC7234: HTTP/1.1, part 6: Caching</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc7235">RFC7235: HTTP/1.1, part 7:
+                                    Authentication</a></li>
+                        </ul>
+                        <ul>
+                            <p> Along with</p>
+                            <li><a href="http://tools.ietf.org/html/rfc7236">RFC7236: Initial HTTP Authentication Scheme
+                                    Registrations</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc7237">RFC7237: Initial HTTP Method
+                                    Registrations</a></li>
+                        </ul>
+                        <ul>
+                            <p> And related specifications:</p>
+                            <li><a href="RFC7238: The HTTP Status Code 308 (Permanent Redirect)">RFC7236: Initial HTTP
+                                    Authentication Scheme
+                                    Registrations</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc7239">RFC7239: Forwarded HTTP Extension</a></li>
+                            <li><a href="http://tools.ietf.org/html/rfc7240">RFC7240: Prefer Header for HTTP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-timeline">
+                    <p class="date">2014-02</p>
+                    <p class="desc">drafts -26 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/26">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+                <div class="card-timeline">
+                    <p class="date">2013-11</p>
+                    <p class="desc">drafts -25 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/25">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+                <div class="card-timeline">
+                    <p class="date">2013-09</p>
+                    <p class="desc">drafts -24 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/24">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2013-07</p>
+                    <p class="desc">drafts -23 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/23">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2013-03</p>
+                    <p class="desc">drafts -22 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/22">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2012-10</p>
+                    <p class="desc">drafts -21 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/21">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2012-07</p>
+                    <p class="desc">drafts -20 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/20">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2012-03</p>
+                    <p class="desc">drafts -19 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/19">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2012-01</p>
+                    <p class="desc">drafts -18 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/18">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2011-10</p>
+                    <p class="desc">drafts -17 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/17">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2011-06</p>
+                    <p class="desc">drafts -16 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/16">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2011-07</p>
+                    <p class="desc">drafts -15 of the revised</p>
+                    <p class="link"><a href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/15">
+                            HTTP/1.1 specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2011-06</p>
+                    <p class="desc">draft-ietf-httpbis-content-disp published as</p>
+                    <p class="link"><a href="http://tools.ietf.org/html/rfc6266">RFC 6266</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2011-04</p>
+                    <p class="desc">drafts -14 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/14">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2011-03</p>
+                    <p class="desc">drafts -13 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/13">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2010-10</p>
+                    <p class="desc">drafts -12 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/12">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2010-08</p>
+                    <p class="desc">drafts -11 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/11">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2010-07</p>
+                    <p class="desc">drafts -10 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/10">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2010-03</p>
+                    <p class="desc">drafts -09 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/09">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2009-11</p>
+                    <p class="desc">drafts -08 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/08">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2009-07</p>
+                    <p class="desc">drafts -07 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/07">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2009-03</p>
+                    <p class="desc">drafts -06 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/06">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2008-11</p>
+                    <p class="desc">drafts -05 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/05">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2008-08</p>
+                    <p class="desc">draft -00 of </p>
+                    <p class="link"><a
+                            href="http://tools.ietf.org/html/draft-ietf-httpbis-method-registrations-00">Initial
+                            Hypertext Transfer Protocol (HTTP) Method Registrations</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2008-08</p>
+                    <p class="desc">drafts -04 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/04">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2008-07</p>
+                    <p class="desc"> draft -02 of</p>
+                    <p class="link"><a
+                            href="http://tools.ietf.org/html/draft-ietf-httpbis-security-properties-02">Security
+                            Requirements for HTTP</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2008-06</p>
+                    <p class="desc">drafts -03 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/03">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2008-02</p>
+                    <p class="desc">drafts -02 of the revised</p>
+                    <p class="link"><a
+                            href="http://trac.tools.ietf.org/wg/httpbis/trac/browser/draft-ietf-httpbis/02">HTTP/1.1
+                            specifications</a></p>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2007-10</p>
+                    <p class="desc"><a href="http://lists.w3.org/Archives/Public/ietf-http-wg/2007OctDec/0090.html">
+                            Hypertext Transfer Protocol Bis WG (httpbis) </a> came to life.</p>
+
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2007-06</p>
+                    <p class="desc"><a
+                            href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-03.txt">new
+                            revision of RFC2616bis</a> issued. [ <a
+                            href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-03.html">HTML
+                            version</a> ] </p>
+
+                </div>
+
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">2006-10</p>
+                    <p class="desc">An effort to revise RFC2616 started, see the<a
+                            href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616bis/issues/"> Issue list</a> ,
+                        <a href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-02.txt">latest
+                            draft</a>
+                        [ <a href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-02.html">HTML
+                            version</a> ]
+                        and the <a
+                            href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-latest.txt">editors'
+                            copy </a>[ <a
+                            href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616bis/draft-lafon-rfc2616bis-latest.html">HTML
+                            version</a> ]. </p>
+
+                </div>
+
+
+                <div class="card-timeline toggleCards hide-card">
+
+                    <p class="date">1999-07</p>
+                    <p class="desc"> <a href="https://www.w3.org/1999/07/HTTP-PressRelease">W3C Supports HTTP/1.1
+                            Reaching IETF Draft Standard </a> - ( <a
+                            href="https://www.w3.org/1999/07/HTTP11-test.html">testimonials</a> ) </p>
+
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">1999-06</p>
+                    <p class="desc"> NEW <a href="https://www.w3.org/Protocols/Specs.html#RFC"></a> HTTP IETF RFCs</p>
+                    <p class="read-more"> Read more <i class="material-icons"> &#xe5c5; </i></p>
+                    <div class="hidden-more">
+                        <ul>
+                            <li><a href="https://www.w3.org/Protocols/rfc2616/rfc2616.txt">RFC 2616</a>: <a
+                                    href="https://www.w3.org/Protocols/rfc2616/rfc2616.html">Hypertext Transfer Protocol
+                                    -- HTTP/1.1</a>
+                                ( <a href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616.ps">Postscript</a> ),
+                                ( <a href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616.pdf">PDF</a> ), ( <a
+                                    href="https://www.w3.org/Protocols/HTTP/1.1/rfc2616.txt.gz">compressed text</a> )
+                            </li>
+
+                            <li><a href="http://tools.ietf.org/html/rfc7235">RFC7235: HTTP/1.1, part 7:
+                                    Authentication</a></li>
+
+                            <li>
+                                <a href="http://www.ietf.org/rfc/rfc2617.txt">RFC 2617: HTTP Authentication: Basic and
+                                    Digest Access Authentication</a>
+                            </li>
+                            <li>
+                                <a href="http://purl.org/NET/http-errata">Errata </a>for RFC 2616 and RFC 2617
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">1999-06</p>
+                    <p class="desc"> HTTP Extension Framework pending IESG review.</p>
+                    <p class="read-more"> Read more <i class="material-icons"> &#xe5c5; </i></p>
+                    <div class="hidden-more">
+                        <ul>
+                            <li>
+                                Stable ID is <a
+                                    href="https://www.w3.org/Protocols/HTTP/ietf-http-ext/draft-frystyk-http-extensions-03">draft-frystyk-http-extensions-03.txt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">1999-05</p>
+                    <p class="desc"> <strong>W3C Note</strong> <a href="https://www.w3.org/1999/04/Editing/"> Editing
+                            the Web: Detecting the Lost Update Problem Using Unreserved Checkout</a> </p>
+
+                </div>
+
+                <div class="card-timeline toggleCards hide-card">
+                    <p class="date">1999-03-31</p>
+                    <p class="desc"> <a href="https://www.w3.org/Jigsaw/">Jigsaw 2.0.2</a> Implements <a
+                            href="https://www.w3.org/Protocols/HTTP/ietf-http-ext/">HTTP Extension Framework</a> </p>
+
+                </div>
+
+                <button class="toggleGrid">View all</button>
+            </div>
+
+            <p>
+                Nearby you can find
+            </p>
+
+            <br>
+
+            <ul class="default-list">
+                <li>The <a href="https://www.w3.org/Protocols/HTTP/Performance/">HTTP Performance Overview </a> for the
+                    speed you're longing for...</li>
+                <li>The <a href="https://www.w3.org/Protocols/HTTP/Forum/"> HTTP/1.1 Implementor's Forum</a> for
+                    discussions of HTTP/1.1 implementation tricks as well as interoperability work </li>
+            </ul>
+            <br>
+            <p>
+                <a href="#other" class="smooth-scroll">Related Protocols</a>
+            </p>
+            <br>
+            <ul class="default-list">
+                <li>The <a href="https://www.w3.org/Protocols/HTTP/ietf-http-ext/">HTTP Extension Framework Internet
+                        Draft and discussions</a> </li>
+                <li> <a href="https://www.w3.org/Protocols/MUX/">WebMux </a> - a simple multiplexing protocol</li>
+                <li> <a href="https://www.w3.org/Protocols/HTTP-NG/Activity.html">W3C HTTP-NG activity</a> and <a
+                        href="https://www.w3.org/Protocols/HTTP-NG/"> HTTP-NG Overview</a></li>
+            </ul>
+
+
+        </div>
+
+        <div id="news">
+            <h1 class="div-title">News,Updates, and Events</h1>
+
+            <ul class="default-list div-list">
+                <li> <strong>Dec 16, 1998</strong> : <a href="https://www.w3.org/People/Jose/"> Jose Kahan</a> announces
+                    <a href="http://lists.w3.org/Archives/Public/www-lib/1998OctDec/0211.html">client-side Digest
+                        Authentication implementation in libwww </a> - <a href="https://www.w3.org/Library/cvs.html">try
+                        it out</a> ! </li>
+            </ul>
+
+            <p>See also the <a href="https://www.w3.org/Protocols/Timeline.html"> HTTP timeline </a>for older events</p>
+        </div>
+
+        <div class="grey" id="specs">
+
+            <h1 class="div-title">Specifications, Drafts, Papers and Reports</h1>
+
+            <p> <strong> HTTP Working Group</strong></p>
+
+            <ul class="default-list div-list">
+                <li> List of all <a href="https://www.w3.org/Protocols/Specs.html"> HTTP RFCs </a>
+                    <ul class="default-list inner-list">
+                        <li> <a href="http://www.ietf.org/rfc/rfc2616.txt"> RFC 2616: Hypertext Transfer Protocol --
+                                HTTP/1.1 </a></li>
+                        <li> <a href="http://www.ietf.org/rfc/rfc2617.txt">RFC 2617: HTTP Authentication: Basic and
+                                Digest Access Authentication</a> </li>
+                    </ul>
+                </li>
+
+                <li>Previous <a href="https://www.w3.org/Protocols/Specs.html">HTTP specifications and drafts</a> . If
+                    you are looking for previous drafts then have a look at the <a
+                        href="https://www.w3.org/Protocols/History.html"> HTTP draft specification change history</a>
+                </li>
+                <li> The <a href="http://ftp.ics.uci.edu/pub/ietf/http/">IETF HTTP working group </a> list of Internet
+                    drafts and RFCs </li>
+                <li> The <a href="http://www.ics.uci.edu/~ejw/authoring/"> Distributed Authoring and Versioning</a>
+                    working group maintains a list of their drafts
+                </li>
+                <li>David M. Kristol maintains a page on <a href="http://kristol.org/cookie/cookie-ver.html">HTTP State
+                        Management </a> - a.k.a. cookies </li>
+                <li> Koen Holtman maintains a page on <a href="http://gewis.win.tue.nl/~koen/conneg/">transparent HTTP
+                        content negotiation </a> </li>
+
+            </ul>
+
+            <p> <strong> Related Protocols</strong></p>
+            <br>
+            <a href="https://www.w3.org/Protocols/HTTP/ietf-http-ext/">HTTP Extension Framework</a>
+            <p class="indented">
+                    An extension mechanism for HTTP designed to address the tension between private agreement and public
+                    specification and to accommodate extension of HTTP clients and servers by software components
+            </p>
+           
+            <a href="https://www.w3.org/Protocols/MUX/">
+                Multiplexing Protocol (MUX)</a>
+            <p class="indented">
+                    A draft proposal for introducing asynchronous messaging support at a layer below HTTP
+            </p>    
+
+            <a href="https://www.w3.org/Protocols/HTTP/Fragment/draft-bos-http-redirect-00.txt">Handling of fragment identifiers in redirected URLs</a>
+
+            <p class="indented">                           
+            Handling of fragment identifiers in redirected URLs
+            An Internet Draft with a proposal for an issue that HTTP leaves unspecified.
+            </p>
+
+            <a href="https://www.w3.org/Protocols/HTTP-NG/">HTTP-NG - Hypertext Transfer Protocol - Next Generation</a>
+            <p class="indented">
+                  a former W3C Activity on reengineering the basic protocol architecture by using modularity, simplicity and
+            layering.
+            </p>
+
+            <p> <strong>Background</strong></p>
+            <br>
+           <li><a href="https://www.w3.org/Protocols/Time/">Overview of Time</a>- What is the state of time on the Internet?</li> 
+            <li><a href="https://www.w3.org/Protocols/Papers.html"> Interesting Papers and <strong> MUST </strong>reads</a> ! A collection of papers from work shops, conferences etc.</li> 
+            <li><a href="https://www.w3.org/Protocols/HTTP/Performance/Overview.html#Compression">Compression and HTTP</a>  - also check out the <a href="http://en.wikipedia.org/wiki/Data_compression">comprehensive compression overview</a> </li>
+            <li> <a href="https://www.w3.org/Protocols/Classic.html">Classic HTTP Documents </a>   - read how it all started </li>   
+
+
+        </div>
+    </main>
+    <footer></footer>
+
+
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>

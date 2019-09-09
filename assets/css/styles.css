@@ -1,0 +1,321 @@
+/*GENERAL*/
+*
+{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body
+{
+  font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  line-height: 172.7%;
+  background-color: #fff;
+  max-width:100vw;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color:#005A9C;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+button
+{
+    border:none;
+}
+
+.grey
+{
+    background-color:#F4F4F4;
+}
+
+p
+{
+    margin-top: 20px;
+}
+
+::-webkit-scrollbar 
+{
+    width: 8px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track 
+{
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb 
+{
+    background: #888;
+    border-radius: 8px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #555;
+}
+
+
+/* HEADER STYLES */
+
+/* logo */
+
+/* logo */
+header span 
+{
+    display: inline-block;
+    height: 80px;
+    max-height: 80px;
+    min-height: 80px;
+}
+
+header span > img
+{
+    height: 100%;
+    width:100%;
+}
+
+.logos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#w3c
+{
+  width:60px;
+}
+
+#arch
+{
+    width:180px;     
+}
+
+#http
+{
+    width:60px;
+}
+
+/* logo end */
+
+/* nav */
+
+nav
+{
+    font-weight: 500;
+    margin-top:2vh;
+}
+
+nav a
+{
+    color : #000;
+}
+
+
+.dropDwn
+{
+    position: relative;
+    cursor: pointer;
+}
+
+
+.dropDwn i
+{
+    position: relative;;
+    top: 10%;
+}
+
+.dropDwn .menu
+{
+    display: none;
+    position: absolute;
+    top:40%;
+    left:5%;
+    background: #F4F4F4;
+    min-width: 200px;
+    border: 1px solid black;
+    z-index:100;
+}
+
+.menu.isVisibile
+{
+    display: initial;
+}
+
+.menu li
+{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu a
+{
+    display: block;    
+}
+
+/* nav end */
+
+/* HEADER STYLES END*/
+
+/* MAIN STYLES */
+
+main > div
+{
+    padding: 20px 30px;
+   
+}
+
+main li
+{
+    list-style-type: disc;
+}
+
+/* grid cards start */
+/* grid start */
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 40px;
+
+}
+
+.card-timeline
+{
+    background: #FFFFFF;
+    border: 1px solid #18BF73;
+    border-radius: 4px;
+    padding: 40px 15px;
+    text-align: center;
+    position: relative;
+}
+
+.date
+{
+  font-weight: 500;
+  margin-top:15px;
+  font-size:18px;
+}
+
+.desc
+{
+   margin-top:15px;
+   font-size: 1rem;
+}
+
+.link
+{
+  margin-top:15px;
+}
+
+.read-more
+{
+    margin-top:15px;
+    position: relative;
+    font-size: 15px;
+    cursor:pointer;
+}
+
+.read-more i
+{
+    position: absolute;
+    bottom: 5%;
+}
+
+.hidden-more
+{
+    position: absolute;
+    left:0%;
+    background: #fff;
+    text-align: start;
+    padding:10px;
+    padding-left: 30px;
+    font-size: 14px;
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 100;
+    border:2px solid #18BF73;
+}
+
+
+
+.hidden-more li
+{
+    list-style-type: disc;
+}
+
+.isVisibile
+{
+    display: initial;
+}
+
+.toggleGrid
+{   
+   grid-column: 1 / -1;
+   min-width: 100px;
+   margin:auto;
+   padding:12px;
+   font-size: 20px;
+   cursor: pointer;
+   background: #02548F;
+   border-radius: 4px;
+   color:#fff;
+}
+
+.hide-card
+{
+    display: none;
+}
+
+/* grid cards end */
+/* grid end */
+
+.default-list
+{
+    padding-left: 30px;    
+}
+
+
+.div-title
+{
+    line-height: 40px
+}
+
+.div-list
+{
+    margin-top:20px;
+}
+
+.inner-list li
+{
+    list-style-type: circle
+}
+
+.indented
+{
+    margin-top: 5px;
+    text-indent: 30px;
+}
+
+/* MAIN STYLES END*/
+
+/* MAIN STYLES END*/
